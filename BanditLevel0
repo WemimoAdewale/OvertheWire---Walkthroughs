@@ -1,0 +1,4 @@
+#Banditlevel0 task
+Using ssh, i typed the following command to my command prompt to be able to login to overthewire labs.
+ssh -p 2220 bandit0@bandit.labs.overthewire.org
+The password used was from the overthewirewebsite. With this bandit0 was solved.
