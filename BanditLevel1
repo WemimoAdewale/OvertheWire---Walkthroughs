@@ -1,0 +1,5 @@
+# This level is the first actual real task on bandit.
+As in the instruction from the website, the password is in the readme file somewhere on the system. Note that the password to login into this level was from level0 hence it is important to solve each level one at a time.
+Step 1: ssh into bandit1 using
+ssh -p 2220 bandit1@bandit.labs.overthewire.org.
+Step 2 : login and get password for the next level.
