@@ -1,0 +1,6 @@
+# First step is to ssh into the game using 
+ssh -p 2220 bandit%@bandit.labs.overthewire.org
+#the password is from the previous level. After this i use the 'ls' command to see the contents of the file.
+#What i am looking for is a human readable file that is 1033 bytes in size and not executable. Hence i run this command
+find . -type f -size 1033c ! -executable -exec file {} \; | grep -i 'text'
+#This command returns where the file is and i cat into this file to get the password of the next level.
