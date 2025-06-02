@@ -1,0 +1,4 @@
+# This level looks for the password in a data.txt file and it is the only line of text that occurs once in the file.
+#The command to run is 
+sort data.txt | uniq -u
+#the sort command puts identical lines next to each other and the uniq -u command prints out only lines that are unique.
