@@ -1,0 +1,8 @@
+# This level is similar to the revious one. Only that in this case, the files are hidden right from the root. The file is name "somewhere on the server" and has the folowing properties
+# - owned by user bandit6
+# - owned by group bandit7
+# -the size is 33 bytes
+Step 1 is to locate the file using the following command
+find / -type f -user bandit7 - group bandit6 -size 33c 2>/dev/null
+# This command returns where the file is and the /dev/null is to suppress  permission denied errors
+# i cat into the returned path then get the password.
