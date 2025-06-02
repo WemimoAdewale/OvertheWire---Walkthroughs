@@ -1,0 +1,3 @@
+# This level is looking for the pasword next to the word "millionth" the file contains so many words so i use the command to filter it
+grep  millionth "data.txt"
+# i copy the password from the line it returns.
