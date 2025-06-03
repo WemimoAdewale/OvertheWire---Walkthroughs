@@ -1,0 +1,5 @@
+#This level is basically looking for the password preceeded by the'=' character in a data.txt file which basically contains non human-readable text.
+#I ssh into the level, ls to see the contents of the level then use the following command to view the few human readable text in data.txt file.
+strings data.txt | grep '='
+# strings extracts all human readable text
+# grep = checks out all text preceeded by the '=' sign
