@@ -1,0 +1,13 @@
+# The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. 
+# This file is written in hexadecimal characters.The binary was compressed multiple times. I had to restore the original file by undoing each layer until i got the plain text
+xxd -r data.txt > data  
+#used this to reverse the hexdump back into a binary file
+file data
+# i used this to check what type of file data was
+#afterwards, i used different tools depending on what file returned. When it was gzip
+gunzip data.gz
+#when it returned bzip2
+bzip2 -d fata.bz2
+#when it returned tar
+tar -xf data.
+#this process was used iteratively until asci text was returned. The ascii text is the password for level 13.
